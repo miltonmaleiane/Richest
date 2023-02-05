@@ -1,0 +1,14 @@
+.m-img{
+width:"30px";
+height:"24px";
+}
+.container img{
+  
+        height: 100px;
+        position: absolute;
+       margin-top: -40px;
+        left: 50%;
+}
+.navbar{
+    height: 100px;
+}
