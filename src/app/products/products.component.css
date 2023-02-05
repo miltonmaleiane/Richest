@@ -1,0 +1,19 @@
+.card{
+    margin-right: 10px;
+    width:70px;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.body-class{
+    border: 5px solid aqua;
+    background: #9fa932;
+    width: 90%;
+position: absolute;
+left: 5%;
+align-items: center;
+
+}
