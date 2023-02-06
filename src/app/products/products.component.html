@@ -1,15 +1,16 @@
 <div class="body-class">
 
-    <h1 style="text-align: center;">{{10000|currency}}</h1>
+    <h1 style="text-align: center;">{{fortune|currency}}</h1>
 <div class="products">
 <div class="card" style="width: 21rem;">
     <img class="card-img-top" src="./assets/b-mac.png" alt="Card image cap">
     <div class="card-body">
-        <p class="price"> {{40|currency}}</p>
+        <h1>{{prod.name}}</h1>
+        <p class="price"> {{prod.price|currency}}</p>
     </div>
     <div class="buy-sell">
         <button disabled="disabled">Sell</button>
-        <button>Buy</button>
+        <button (click)="buy()">Buy</button>
       
     </div>
 </div>
