@@ -15,11 +15,7 @@ export class ProductsComponent {
  ngOnInit():void{
   this.getProducts();
  }
-prod: Product = {
-  name: "Burger",
-  price: 45,
-  
-}
+quantity:number =0;
 getProducts():void {
   this.productService.getProducts()
   .subscribe(x => {
@@ -28,11 +24,11 @@ getProducts():void {
     this.product = x});
 }
 buy(price:number){
-  if(this.fortune - price>= 0)
+  if(this.fortune - (price*this.quantity)>= 0)
   {
-    this.fortune = this.fortune - price
+    this.fortune = this.fortune - (price *this.quantity)
   }
-  
+  alert(this.quantity)
 
 }
 }

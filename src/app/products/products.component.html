@@ -12,7 +12,7 @@
                 </div>
                 <div class="tradeside">
                     <button disabled="disabled" class="btSell">Sell</button>
-                    <input class="quantity" type="number">
+                    <input class="quantity" type="number" [(ngModel)]="quantity" max=4 min=1 value="1">
                     <button (click)="buy(p.price)" class="btBuy">Buy</button>
                   
                 </div>
