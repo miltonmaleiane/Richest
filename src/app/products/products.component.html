@@ -1,65 +1,28 @@
+<h1 style="text-align: center;">{{fortune|currency}}</h1>
 <div class="body-class">
 
-    <h1 style="text-align: center;">{{fortune|currency}}</h1>
+<ul>
+    <li *ngFor="let p of product">
+    
+            <div class="card" style="width: 21rem;">
+                <img class="card-img-top" src="./assets/b-mac.png" alt="Card image cap">
+                <div class="card-body">
+                    <h1>{{p.name}}</h1>
+                    <p class="price"> {{p.price|currency}}</p>
+                </div>
+                <div class="buy-sell">
+                    <button disabled="disabled">Sell</button>
+                    <button (click)="buy()">Buy</button>
+                  
+                </div>
+            </div>
+     
+    </li>
+</ul>
+
+
 <div class="products">
 <div class="card" style="width: 21rem;">
-    <img class="card-img-top" src="./assets/b-mac.png" alt="Card image cap">
-    <div class="card-body">
-        <h1>{{prod.name}}</h1>
-        <p class="price"> {{prod.price|currency}}</p>
-    </div>
-    <div class="buy-sell">
-        <button disabled="disabled">Sell</button>
-        <button (click)="buy()">Buy</button>
-      
-    </div>
-</div>
-
-<div class="card" style="width: 21rem;">
-    <img class="card-img-top" src="./assets/b-mac.png" alt="Card image cap">
-    <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-    </div>
-    <div class="buy-sell">
-        <button disabled="disabled">Sell</button>
-        <button>Buy</button>
-
-    </div>
-</div><div class="card" style="width: 21rem;">
-    <img class="card-img-top" src="./assets/b-mac.png" alt="Card image cap">
-    <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-    </div>
-    <div class="buy-sell">
-        <button disabled="disabled">Sell</button>
-        <button>Buy</button>
-
-    </div>
-</div><div class="card" style="width: 21rem;">
-    <img class="card-img-top" src="./assets/b-mac.png" alt="Card image cap">
-    <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-    </div>
-    <div class="buy-sell">
-        <button disabled="disabled">Sell</button>
-        <button>Buy</button>
-
-    </div>
-</div><div class="card" style="width: 21rem;">
-    <img class="card-img-top" src="./assets/b-mac.png" alt="Card image cap">
-    <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-    </div>
-    <div class="buy-sell">
-        <button disabled="disabled">Sell</button>
-        <button>Buy</button>
-
-    </div>
-</div><div class="card" style="width: 21rem;">
     <img class="card-img-top" src="./assets/b-mac.png" alt="Card image cap">
     <div class="card-body">
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's

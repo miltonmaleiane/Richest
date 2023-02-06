@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Product } from '../product';
+import { PRODUCTS } from '../mock-products';
 
 @Component({
   selector: 'app-products',
@@ -8,6 +9,7 @@ import { Product } from '../product';
 })
 
 export class ProductsComponent {
+  product = PRODUCTS
   fortune: number =9800
  constructor( ){}
 prod: Product = {
