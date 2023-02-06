@@ -32,18 +32,21 @@ align-items: center;
 align-items: center;
 }
 .quantity{
-    
-    width: 80px;
+    border-radius: 3px;
+    width: 70px;
     align-items: center;
 }
 .btBuy{
   float: right;
-  background-color: cyan ;
+  background:linear-gradient(#2ecc71, #1abc9c);
+  border-radius: 5px;
   cursor: pointer;
   width: 70px;
   margin-right: 10px;
 }
 .btSell{
+    border-radius: 3px;
+    width: 70px;
     float: left;
     margin-left: 10px;
 }
