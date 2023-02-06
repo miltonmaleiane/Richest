@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Product } from '../product';
 import { PRODUCTS } from '../mock-products';
-
+import { ProductService } from '../product.service';
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -9,16 +9,26 @@ import { PRODUCTS } from '../mock-products';
 })
 
 export class ProductsComponent {
-  product = PRODUCTS
+  product: Product []=[];
   fortune: number =9800
- constructor( ){}
+ constructor( private productService: ProductService){}
+ ngOnInit():void{
+  this.getProducts();
+ }
 prod: Product = {
   name: "Burger",
   price: 45,
   
 }
+getProducts():void {
+  this.productService.getProducts()
+  .subscribe(x => {
+    console.log(x);
+    
+    this.product = x});
+}
+buy(price:number){
+  this.fortune = this.fortune - price
 
-buy(){
-  this.fortune = this.fortune - this.prod.price
 }
 }
