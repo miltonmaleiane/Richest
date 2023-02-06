@@ -17,3 +17,7 @@ left: 5%;
 align-items: center;
 
 }
+.list-father li{
+    display: inline;
+    float: left;
+}

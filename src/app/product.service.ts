@@ -14,10 +14,5 @@ export class ProductService {
     return products; 
 
   }
-  buys(){
-    alert("x")
-  }
-  getPrice(){
-    return this.getPrice
-  }
+
 }
