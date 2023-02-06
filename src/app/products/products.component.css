@@ -9,6 +9,7 @@
     align-items: center;
 }
 .body-class{
+    text-align: center;
     border: 5px solid aqua;
     background: #9fa932;
     width: 90%;
@@ -17,7 +18,32 @@ left: 5%;
 align-items: center;
 
 }
+.list-father{
+
+}
 .list-father li{
     display: inline;
     float: left;
+}
+.card-img-top{
+    height: 200px;
+}
+.tradeside{
+align-items: center;
+}
+.quantity{
+    
+    width: 80px;
+    align-items: center;
+}
+.btBuy{
+  float: right;
+  background-color: cyan ;
+  cursor: pointer;
+  width: 70px;
+  margin-right: 10px;
+}
+.btSell{
+    float: left;
+    margin-left: 10px;
 }

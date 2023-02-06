@@ -10,9 +10,10 @@
                     <h1>{{p.name}}</h1>
                     <p class="price"> {{p.price|currency}}</p>
                 </div>
-                <div class="buy-sell">
-                    <button disabled="disabled">Sell</button>
-                    <button (click)="buy(p.price)">Buy</button>
+                <div class="tradeside">
+                    <button disabled="disabled" class="btSell">Sell</button>
+                    <input class="quantity" type="number">
+                    <button (click)="buy(p.price)" class="btBuy">Buy</button>
                   
                 </div>
             </div>

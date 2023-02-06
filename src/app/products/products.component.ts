@@ -28,7 +28,11 @@ getProducts():void {
     this.product = x});
 }
 buy(price:number){
-  this.fortune = this.fortune - price
+  if(this.fortune - price>= 0)
+  {
+    this.fortune = this.fortune - price
+  }
+  
 
 }
 }
