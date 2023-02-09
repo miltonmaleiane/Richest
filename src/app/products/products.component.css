@@ -19,7 +19,8 @@ align-items: center;
 
 }
 .list-father{
-
+ display: flex;
+ justify-content: center;
 }
 .list-father li{
     display: inline;
