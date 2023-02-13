@@ -25,10 +25,11 @@ getProducts():void {
     console.log(x);
     this.product = x});
 }
-buy(price:number){
+buy(price:number,qt:number){
   if(this.fortune - price>= 0)
   {
     this.fortune = this.fortune - price 
+  
     for (var i = 0; i < this.product.length; i++)
     {
      this.product[i].buyQt = this.product[i].buyQt +1 ;
@@ -37,5 +38,13 @@ buy(price:number){
  
   //alert(this.quantity)
 
+}
+onSelected (product:Product): void{
+  if(this.fortune - product.price>= 0)
+  {
+    this.fortune = this.fortune - product.price;
+    product.buyQt = product.buyQt+1
+  }
+console.log(product)
 }
 }

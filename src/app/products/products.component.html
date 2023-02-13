@@ -15,7 +15,8 @@
                 <div class="tradeside">
                     <button  disabled="disabled" class="btSell">Sell</button>
                     <input class="quantity" type="number" [(ngModel)]="quantity" max=4 min=1 value="1">
-                    <button (click)="buy(p.price)" class="btBuy">Buy</button>
+                    <button (click)="onSelected(p)" class="btBuy">Buy</button>
+                    <!-- <button (click)="buy(p.price,p.buyQt)" class="btBuy">Buy</button> -->
                   
                 </div>
             </div>
