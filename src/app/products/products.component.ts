@@ -44,13 +44,21 @@ buy(price:number,qt:number){
 
 }
 //passing a single product to  a function
-onSelected (product:Product): void{
+Buy (product:Product): void{
   if(this.fortune - product.price>= 0)
   {
     this.fortune = this.fortune - product.price;
     product.buyQt = product.buyQt+1
   }
 console.log(product)
+}
+
+Sell (product: Product): void{
+  if(product.buyQt>0){
+    this.fortune = this.fortune + product.price;
+    product.buyQt = product.buyQt -1
+
+  }
 }
 buyQuantity(product:Product): boolean{
 if(product.buyQt>0){
@@ -62,4 +70,29 @@ if(product.buyQt>0){
 }
 
 }
+onKey(event: any){
+  console.log(event)
+}
+times:number = 0
+oldTimes:number = 0
+getValue(val:string, product: Product){
+  // this.oldTimes = this.times
+  // if(this.times> this.oldTimes){
+  // alert("increased") 
+  // }else{
+  //   alert("decreased")
+    
+  // }
+  // this.times = parseInt(val)
+
+
+  // if(this.fortune - (product.price*this.times)>= 0)
+  // {
+  //   this.fortune = this.fortune - (product.price*this.times);
+  //   product.buyQt = product.buyQt+1
+  // }
+  // console.log(val)
+
+}
+
 }

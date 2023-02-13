@@ -13,11 +13,11 @@
                  
                 </div>
                 <div class="tradeside">
-                    <button  [disabled]="buyQuantity(p)" class="btSell">Sell</button>
-                    <input class="quantity" type="number" [(ngModel)]="quantity" max=4 min=1 value="1">
-                    <button (click)="onSelected(p)" class="btBuy">Buy</button>
+                    <button (click)="Sell(p)" [disabled]="buyQuantity(p)" class="btSell">Sell</button>
+                    <input class="quantity"  #box  onchange="onChange(this.value)" disabled = "disabled">
+                    <button (click)="Buy(p)" class="btBuy">Buy</button>
                     <!-- <button (click)="buy(p.price,p.buyQt)" class="btBuy">Buy</button> -->
-                  
+         
                 </div>
             </div>
      
