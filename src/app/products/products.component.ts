@@ -23,15 +23,19 @@ getProducts():void {
   this.productService.getProducts()
   .subscribe(x => {
     console.log(x);
-    
     this.product = x});
 }
 buy(price:number){
-  if(this.fortune - (price*this.quantity)>= 0)
+  if(this.fortune - price>= 0)
   {
-    this.fortune = this.fortune - (price *this.quantity)
+    this.fortune = this.fortune - price 
+    for (var i = 0; i < this.product.length; i++)
+    {
+     this.product[i].buyQt = this.product[i].buyQt +1 ;
+    }
   }
-  alert(this.quantity)
+ 
+  //alert(this.quantity)
 
 }
 }
