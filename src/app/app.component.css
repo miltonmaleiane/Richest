@@ -1,14 +1,32 @@
+body{
+
+    background-color: aqua;
+    background-image: url("../assets/circ.png");
+}
+.mainb{
+    height: 20px;
+    background-color: aqua;
+    background-image: url("../assets/circ.png");
+}
 .m-img{
 width:"30px";
 height:"24px";
 }
-.container img{
-  
+.header{
+    height: 140px;
+    background-color: aquamarine
+}
+.header img{
+        border-radius: 50%;
         height: 100px;
         position: absolute;
-       margin-top: -40px;
+       margin-top: 20px;
         left: 50%;
 }
-.navbar{
-    height: 100px;
+.header h1 {
+    margin-top: 40px;
+}
+.person-name h1{
+    margin-top: 40px;
+    font-size: 10px;
 }
