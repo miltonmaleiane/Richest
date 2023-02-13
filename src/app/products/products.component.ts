@@ -12,10 +12,14 @@ import { ProductService } from '../product.service';
 export class ProductsComponent {
   product: Product []=[];
   fortune: number =9800
+  
+
  constructor( private productService: ProductService){}
  ngOnInit():void{
+
   this.getProducts();
  }
+ 
 
 quantity:number =0; 
 
@@ -39,6 +43,7 @@ buy(price:number,qt:number){
   //alert(this.quantity)
 
 }
+//passing a single product to  a function
 onSelected (product:Product): void{
   if(this.fortune - product.price>= 0)
   {
@@ -46,5 +51,15 @@ onSelected (product:Product): void{
     product.buyQt = product.buyQt+1
   }
 console.log(product)
+}
+buyQuantity(product:Product): boolean{
+if(product.buyQt>0){
+  return false;
+
+}else{
+  return true
+
+}
+
 }
 }
