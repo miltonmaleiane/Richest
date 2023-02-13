@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Product } from '../product';
 import { PRODUCTS } from '../mock-products';
 import { ProductService } from '../product.service';
+
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -15,7 +16,9 @@ export class ProductsComponent {
  ngOnInit():void{
   this.getProducts();
  }
-quantity:number =0;
+
+quantity:number =0; 
+
 getProducts():void {
   this.productService.getProducts()
   .subscribe(x => {
