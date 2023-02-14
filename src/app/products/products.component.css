@@ -1,6 +1,6 @@
 .card{
     margin-right: 10px;
-    width:70px;
+    width:60px;
 }
 .product-body{
     background: #3c4009;
@@ -70,4 +70,10 @@ align-items: center;
     background: linear-gradient(180deg,#2ecc71,#1abc9c);
    width: 100%;
  
+}
+.card{
+    
+}
+.list-items{
+
 }
