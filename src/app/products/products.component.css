@@ -11,6 +11,11 @@
     margin: auto;
    margin-top: 20px;
     align-items: center;
+    flex-wrap: wrap;
+}
+.product-view{
+    margin-top: 10px;
+    
 }
 
 .body-class{
@@ -28,6 +33,7 @@ align-items: center;
 .list-father{
  display: flex;
  justify-content: center;
+ 
 }
 .list-father li{
     display: inline;
@@ -63,4 +69,5 @@ align-items: center;
     margin-top: 90px;
     background: linear-gradient(180deg,#2ecc71,#1abc9c);
    width: 100%;
+ 
 }
