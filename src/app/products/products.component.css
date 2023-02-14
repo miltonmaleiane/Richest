@@ -2,22 +2,27 @@
     margin-right: 10px;
     width:70px;
 }
-
-
-.products{
+.product-body{
+    background: #3c4009;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+   margin-top: 20px;
     align-items: center;
 }
+
 .body-class{
     margin-top: 90px;
     text-align: center;
     border: 5px solid aqua;
-    background: #9fa932;
-    width: 90%;
+ 
+    width: 80%;
 position: absolute;
-left: 5%;
+
 align-items: center;
+/* background-color: #1abc9c; */
 
 }
 .list-father{
@@ -57,5 +62,5 @@ align-items: center;
 .fortune{
     margin-top: 90px;
     background: linear-gradient(180deg,#2ecc71,#1abc9c);
-    color: white;
+   width: 100%;
 }

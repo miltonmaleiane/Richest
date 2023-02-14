@@ -1,8 +1,9 @@
+<div class="product-body">
 <div class="fortune">
     <h1 style="text-align: center;">{{fortune|currency}}</h1>
 </div>
 
-<div class="body-class">
+<!-- <div class="body-class">
 
 <ul class="list-father">
     <li *ngFor="let p of product; let i = index; " class="list-item">
@@ -19,7 +20,7 @@
                     <button (click)="Sell(p)" [disabled]="buyQuantity(p)" class="btSell">Sell</button>
                     <input class="quantity"  #box  onchange="onChange(this.value)" disabled = "disabled">
                     <button (click)="Buy(p)" class="btBuy">Buy</button>
-                    <!-- <button (click)="buy(p.price,p.buyQt)" class="btBuy">Buy</button> -->
+
          
                 </div>
             </div>
@@ -29,4 +30,30 @@
 
 
 
+</div> -->
+
+<div class="produc-view">
+    <ul class="list-father">
+        <li *ngFor="let p of product; let i = index; " class="list-item">
+        
+                <div class="card" style="width: 21rem;">
+                    <img class="card-img-top" src="./assets/ps5.webp" alt="Card image cap">
+                    <div class="card-body">
+                        <h1>{{p.name}}</h1>
+                        <p class="price"> {{p.price|currency}}</p>
+                        <p>{{p.buyQt}}</p>
+                     
+                    </div>
+                    <div class="tradeside">
+                        <button (click)="Sell(p)" [disabled]="buyQuantity(p)" class="btSell">Sell</button>
+                        <input class="quantity"  #box  onchange="onChange(this.value)" disabled = "disabled">
+                        <button (click)="Buy(p)" class="btBuy">Buy</button>
+    
+             
+                    </div>
+                </div>
+         
+        </li>
+    </ul>
+</div>
 </div>
